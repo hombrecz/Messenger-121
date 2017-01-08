@@ -15,7 +15,7 @@ let cors = require('cors');
 
 const settings = require('../../settings.js');
 
-mongoose.connect(settings.mongo.address);
+mongoose.connect(settings.mongo.address || 'mongodb://localhost/messenger-121-db');
 process.on('uncaughtException', function (err) {
     console.log(err);
 });
@@ -42,7 +42,7 @@ app.get('/*', function (req, res) {
 initDb();
 
 //server start
-let server = app.listen(settings.server.port, function () {
+let server = app.listen(settings.server.port || 3000, function () {
     console.log('Listening on ' + server.address().port)
 });
 
