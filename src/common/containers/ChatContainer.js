@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import Chat from '../components/Chat';
 import io from 'socket.io-client';
 
-const settings = require('../../../settings.js');
-
 const socket = io();
 const initialThread = {name: 'general', messages: []};
 const initialUser = 'user';
