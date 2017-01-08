@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 
 const settings = require('../../../settings.js');
 
-const socket = io.connect(settings.socketIo.address +":"+ settings.socketIo.port);
+const socket = io();
 const initialThread = {name: 'general', messages: []};
 const initialUser = 'user';
 

@@ -11,7 +11,7 @@ let path = require('path');
 let React = require('react');
 let cors = require('cors');
 
-let SocketIo = require('socket.io');
+
 
 const settings = require('../../settings.js');
 
@@ -46,9 +46,8 @@ let server = app.listen(settings.server.port, function () {
     console.log('Listening on ' + server.address().port)
 });
 
-// const io = new SocketIo(server, {path: '/api/chat'});
-const io = SocketIo.listen(settings.socketIo.port);
-const socketEvents = require('./socketEvents')(io);
+let SocketIo = require('socket.io')(server);
+const socketEvents = require('./socketEvents')(SocketIo);
 
 function initDb() {
     let newThread = new Thread({name: 'general', messages: []});
