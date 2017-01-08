@@ -1,14 +1,11 @@
 Messenger 121
 -------------
 TODO
-- docker
 - kontejner na heroku
 - redux?
-- git a github
-
 
 - readme
-    - popis, spuštění, odkaz na apiary
+    - popis, spuštění, odkaz na apiary, heroku, github, dockerhub
     - refaktor dotazu do db
     - isomorphic
     - seznam použitých technologií
