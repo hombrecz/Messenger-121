@@ -11,8 +11,7 @@ services:
     networks:
       - all
     environment:
-      MONGO_ADDRESS: "mongodb://mongo:27017/messenger-121-db"
-      SERVER_PORT: 3000
+      MONGODB_URI: "mongodb://mongo:27017/hackathon"
 
   mongo:
     image: mongo:3

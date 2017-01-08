@@ -13,9 +13,6 @@ services:
       - mongo
     networks:
       - all
-    environment:
-      MONGO_ADDRESS: "mongodb://mongo:27017/messenger-121-db"
-      SERVER_PORT: 3000
 
   mongo:
     image: mongo:3
