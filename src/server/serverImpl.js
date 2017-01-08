@@ -66,7 +66,7 @@ function renderFullPage() {
       </head>
       <body>
         <container id="react"></container>
-        <script src="/dist/bundle.js"></script>
+        <script type="text/javascript" src="/dist/bundle.js"></script>
       </body>
     </html>
   `
