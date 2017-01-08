@@ -17,9 +17,10 @@ export default class Messages extends Component {
 
     render() {
         let messages = this.props.activeThread.messages;
+        let threadName = this.props.activeThread.name;
         return (
             <Panel
-                header="Messages"
+                header={threadName + " - messages"}
                 bsStyle="primary"
             >
                 <ul>
