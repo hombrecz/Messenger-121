@@ -28,10 +28,10 @@ export default class Chat extends Component {
                     <Grid>
                         <Row className="show-grid">
                             <Col xs={4} md={2}>
-                                <UserPanel user={user} logUser={actions.logUser}/>
+                                <UserPanel user={user} actions={actions.logUser}/>
                             </Col>
                             <Col xs={12} md={6}>
-                                <Messages activeThread={activeThread} user={user} sendMessage={actions.sendMessage}/>
+                                <Messages activeThread={activeThread} user={user} actions={actions.sendMessage}/>
                             </Col>
                             <Col xs={4} md={2}>
                                 <Threads activeThread={activeThread} threads={threads}

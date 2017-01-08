@@ -1939,7 +1939,7 @@ lodash-compat@^3.10.1:
   version "3.10.2"
   resolved "https://registry.yarnpkg.com/lodash-compat/-/lodash-compat-3.10.2.tgz#c6940128a9d30f8e902cd2cf99fd0cba4ecfc183"
 
-lodash-es@^4.2.1:
+lodash-es@^4.2.0, lodash-es@^4.2.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
 
@@ -2522,12 +2522,15 @@ react-prop-types@^0.4.0:
   dependencies:
     warning "^3.0.0"
 
-react-redux@^3.0.1:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-3.1.2.tgz#2a888b124e9d01144853612acee19f81d498a836"
+react-redux@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.1.tgz#84a41bd4cdd180452bb6922bc79ad25bd5abb7c4"
   dependencies:
     hoist-non-react-statics "^1.0.3"
     invariant "^2.0.0"
+    lodash "^4.2.0"
+    lodash-es "^4.2.0"
+    loose-envify "^1.1.0"
 
 react-router@^2.0.0-rc4:
   version "2.8.1"
@@ -2589,7 +2592,7 @@ redux-thunk@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-1.0.3.tgz#778aa0099eea0595031ab6b39165f6670d8d26bd"
 
-redux@^3.0.0:
+redux@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/redux/-/redux-3.6.0.tgz#887c2b3d0b9bd86eca2be70571c27654c19e188d"
   dependencies:
